@@ -1,15 +1,29 @@
+/* =========================================================
+   1. FONTE
+   ========================================================= */
+
 @font-face {
     font-family: 'TriacSeventyOne';
-    src: url('./Triac 71.otf') format('truetype'); 
+    src: url('./Triac 71.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+
+/* =========================================================
+   2. RESET GERAL
+   ========================================================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Novo: evita estouro de largura com bordas/padding */
 }
+
+
+/* =========================================================
+   3. BODY
+   ========================================================= */
 
 body {
     padding-left: 100px;
@@ -20,8 +34,14 @@ body {
     font-family: 'TriacSeventyOne', sans-serif;
 }
 
+
+/* =========================================================
+   4. HEADER
+   ========================================================= */
+
 header {
     display: flex;
+
     /* Alterado: fundo alterado de cor sólida para gradiente listrado Y2K */
     background: repeating-linear-gradient(
         45deg,
@@ -30,12 +50,18 @@ header {
         #ea7818 15px,
         #ea7818 30px
     );
+
     color: white;
     flex-direction: column;
     overflow: visible;
     border-radius: 15px 15px 0 0; /* Novo: cantos superiores arredondados */
     padding-top: 10px; /* Novo: espaço interno superior */
 }
+
+
+/* =========================================================
+   5. ÁREA DAS IMAGENS DO HEADER
+   ========================================================= */
 
 #imagens-header {
     display: flex;
@@ -47,6 +73,11 @@ header {
     position: relative; /* Novo: referência para os elementos internos */
 }
 
+
+/* =========================================================
+   6. LOGO
+   ========================================================= */
+
 #logo {
     height: 165.6px;
     width: 480px;
@@ -56,7 +87,13 @@ header {
     z-index: 10;
 }
 
+
+/* =========================================================
+   7. ÁREA CENTRAL DO HEADER
+   ========================================================= */
+
 /* Novo: Bloco de estilos da área central */
+
 #header-centro { /* Novo */
     display: flex; /* Novo */
     flex-direction: column; /* Novo */
@@ -66,11 +103,13 @@ header {
     margin-top: -20px; /* Novo */
 } /* Novo */
 
+
 .header-topo-info { /* Novo */
     display: flex; /* Novo */
     align-items: center; /* Novo */
     gap: 15px; /* Novo */
 } /* Novo */
+
 
 .status-bar { /* Novo */
     color: #ffff00; /* Novo */
@@ -79,6 +118,7 @@ header {
     text-shadow: 2px 2px 0px #000; /* Novo */
     letter-spacing: 1px; /* Novo */
 } /* Novo */
+
 
 .btn-login { /* Novo */
     background: linear-gradient(#ffffff, #cccccc); /* Novo */
@@ -93,11 +133,11 @@ header {
     transition: transform 0.2s; /* Novo */
 } /* Novo */
 
+
 .btn-login:hover { /* Novo */
     transform: scale(1.1); /* Novo */
     background: #ffff00; /* Novo */
 } /* Novo */
-
 
 
 .search-box input { /* Novo */
@@ -108,6 +148,7 @@ header {
     font-size: 14px; /* Novo */
     width: 200px; /* Novo */
 } /* Novo */
+
 
 .search-box button { /* Novo */
     background-color: #ff007f; /* Novo */
@@ -121,10 +162,16 @@ header {
     transition: background-color 0.2s, transform 0.1s; /* Novo */
 } /* Novo */
 
+
 .search-box button:hover { /* Novo */
     background-color: #024301; /* Novo */
     transform: scale(1.05); /* Novo */
-} /* Novo */
+}
+
+
+/* =========================================================
+   8. QUADRO DA IMAGEM DO GRUPO
+   ========================================================= */
 
 #header-div-img {
     width: 280px;
@@ -140,6 +187,11 @@ header {
     z-index: 10;
 }
 
+
+/* =========================================================
+   9. IMAGEM DO GRUPO
+   ========================================================= */
+
 #header-image {
     border-radius: 25px;
     width: 251px;
@@ -150,7 +202,13 @@ header {
     transform: translateX(-50%);
 }
 
+
+/* =========================================================
+   10. BADGE / SELO
+   ========================================================= */
+
 /* Novo: Estilo do selo badge "AO VIVO!" */
+
 .badge-tag { /* Novo */
     position: absolute; /* Novo */
     top: -20px; /* Novo */
@@ -167,6 +225,11 @@ header {
     box-shadow: 3px 3px 0px #000; /* Novo */
 } /* Novo */
 
+
+/* =========================================================
+   11. MENU DE NAVEGAÇÃO
+   ========================================================= */
+
 nav {
     display: flex;
     justify-content: center;
@@ -176,6 +239,7 @@ nav {
     margin-top: 10px; /* Alterado: ajustado de 20px para 10px */
 }
 
+
 ul {
     list-style-type: none;
     display: flex;
@@ -183,9 +247,11 @@ ul {
     gap: 20px;
 }
 
+
 li {
     font-size: 24px; /* Alterado: tamanho alterado de 30px para 24px e display inline removido */
 }
+
 
 a {
     color: white;
@@ -201,17 +267,39 @@ a {
     transition: background-color 0.2s, transform 0.2s;
 }
 
+
 a:hover {
     background-color: #024301;
     transform: scale(1.05);
 }
+
+
+/* =========================================================
+   12. CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+.content {
+    background-color: #024301;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px; /* Novo: espaço entre os elementos */
+}
+
+
+/* =========================================================
+   13. TRAILER / VÍDEO
+   ========================================================= */
+
 .iRafa-trailer {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    height: 384px;
-    width: 684px;
-    max-width: 500px;
+    flex-direction: column;     /* Alinha os itens em coluna */
+    justify-content: center;    /* Centraliza o vídeo na vertical dentro da div */
+    align-items: center;        /* Centraliza o vídeo na horizontal dentro da div */
+    height: 524px;              /* Altura da div (pode aumentar quanto quiser) */
+    width: 100%;
+    max-width: 500px;           /* Largura total da div container */
     margin: 30px auto 0 auto;
     background-color: #430198;
     padding: 15px;
@@ -220,12 +308,20 @@ a:hover {
     box-shadow: 5px 5px 0px #000;
     text-align: center;
 }
+
+
 .video {
-    width: 100%;
-    height: 100%;
+    width: 460px;              /* Largura fixa do vídeo */
+    height: 260px;             /* Altura fixa do vídeo */
+    max-width: 100%;           /* Garante que não ultrapasse a div */
     border-radius: 15px;
     object-fit: cover;
 }
+
+
+/* =========================================================
+   14. ÁREA DE MÚSICAS
+   ========================================================= */
 
 .music-part {
     display: flex;
@@ -240,7 +336,14 @@ a:hover {
     box-shadow: 5px 5px 0px #000;
     text-align: center;
 }
+
+
+/* =========================================================
+   15. PLAYLIST DO SPOTIFY
+   ========================================================= */
+
 /* Container da Playlist estilo iCarly */
+
 .playlist-container {
     max-width: 500px;
     margin: 30px auto 0 auto;
@@ -252,18 +355,11 @@ a:hover {
     text-align: center;
 }
 
+
 .playlist-titulo {
     color: #ffff00;
     font-size: 20px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 0px #000;
     letter-spacing: 1px;
-}
-.content {
-    background-color: #024301;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px; /* Novo: espaço entre os elementos */
 }
