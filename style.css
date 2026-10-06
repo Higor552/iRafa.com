@@ -38,7 +38,7 @@ body {
     padding-top: 60px;
     /* Alterado: aumentado de 50px para 60px para dar espaço ao vazamento */
     padding-bottom: 20px;
-    background-color: #38005b;
+    background-color: #000000;
     font-family: 'TriacSeventyOne', sans-serif;
 }
 
@@ -52,10 +52,10 @@ header {
 
     /* Alterado: fundo alterado de cor sólida para gradiente listrado Y2K */
     background: repeating-linear-gradient(45deg,
-            #da6a0e,
-            #da6a0e 15px,
-            #ea7818 15px,
-            #ea7818 30px);
+            #ff6600,
+            #ff6600 15px,
+            #ff007f 15px,
+            #ff007f 30px);
 
     color: white;
     flex-direction: column;
@@ -161,8 +161,8 @@ header {
 #header-div-img {
     width: 280px;
     height: 160px;
-    background-color: #430198;
-    border: 15px solid #024301;
+    background-color: #000000;
+    border: 15px solid #00ff66;
     border-radius: 30px;
     position: relative;
     overflow: visible;
@@ -202,7 +202,7 @@ header {
     /* Novo */
     left: -20px;
     /* Novo */
-    background-color: #ff0055;
+    background-color: #ff007f;
     /* Novo */
     color: #fff;
     /* Novo */
@@ -235,7 +235,7 @@ nav {
     font-family: coolvetica rg cond, sans-serif;
     display: flex;
     justify-content: center;
-    background-color: #430198;
+    background-color: #0055ff;
     padding: 12px 0;
     /* Alterado: ajustado de 10px para 12px */
     border-radius: 10px;
@@ -262,7 +262,7 @@ li {
 a {
     color: white;
     text-decoration: none;
-    background-color: #da6a0e;
+    background-color: #ff6600;
     padding: 10px 24px;
     border-radius: 8px;
     display: flex;
@@ -278,7 +278,7 @@ a {
     transition: background-color 0.2s, transform 0.2s;
 }
 details {
-    background-color: #da6a0e;
+    background-color: #ff6600;
     padding: 10px 24px;
     border-radius: 8px;
     display: flex;
@@ -289,12 +289,12 @@ details {
     transition: background-color 0.2s, transform 0.2s;
 }
 details :hover {
-    background-color: #024301;
+    background-color: #00ff66;
     transform: scale(1.05);
 }
 
 a:hover {
-    background-color: #024301;
+    background-color: #00ff66;
     transform: scale(1.05);
 }
 
@@ -305,10 +305,10 @@ a:hover {
 
 .content {
     background-image: repeating-linear-gradient(-65deg,
-            #024301,
-            #024301 15px,
-            #025a01 15px,
-            #025a01 30px);
+            #0055ff,
+            #0055ff 15px,
+            #00ff66 15px,
+            #00ff66 30px);
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -337,11 +337,11 @@ a:hover {
     max-width: 500px;
     /* Largura total da div container */
     margin: 30px auto 0 auto;
-    background-color: #430198;
+    background-color: #000000;
     padding: 15px;
     border-radius: 20px;
     border: 30px solid #ffff00;
-    box-shadow: 5px 5px 0px #000;
+    box-shadow: 5px 5px 0px #ff007f;
     text-align: center;
 }
 
@@ -354,7 +354,7 @@ a:hover {
 
 .trailer-title {
     top: -20px;
-    color: #ffffff;
+    color: #ffff00;
     font-size: 50px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 0px #000;
@@ -390,11 +390,11 @@ a:hover {
     max-width: 650px;
     /* Aumentado a largura para caber os dois lados lado a lado */
     margin: 30px auto 0 auto;
-    background-color: #430198;
+    background-color: #000000;
     padding: 15px;
     border-radius: 20px;
     border: 3px solid #ffff00;
-    box-shadow: 5px 5px 0px #000;
+    box-shadow: 5px 5px 0px #0055ff;
     text-align: center;
 }
 
@@ -429,7 +429,7 @@ a:hover {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff007f, #430198);
+    background: linear-gradient(135deg, #ff007f, #0055ff);
     border: 3px solid #ffff00;
     /* Borda Amarela Neon */
     border-radius: 18px;
@@ -440,8 +440,8 @@ a:hover {
 .music-lista {
     flex: 1;
     /* Ocupa 50% do espaço */
-    background-color: #38005b;
-    border: 2px solid #da6a0e;
+    background-color: #000000;
+    border: 2px solid #ff6600;
     border-radius: 12px;
     padding: 12px;
     box-shadow: 3px 3px 0px #000;
