@@ -8,6 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Coolvetica Rg Cond';
     src: url(./Coolvetica\ Rg\ Cond.otf);
@@ -22,7 +23,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Novo: evita estouro de largura com bordas/padding */
+    box-sizing: border-box;
+    /* Novo: evita estouro de largura com bordas/padding */
 }
 
 
@@ -33,7 +35,8 @@
 body {
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 60px; /* Alterado: aumentado de 50px para 60px para dar espaço ao vazamento */
+    padding-top: 60px;
+    /* Alterado: aumentado de 50px para 60px para dar espaço ao vazamento */
     padding-bottom: 20px;
     background-color: #38005b;
     font-family: 'TriacSeventyOne', sans-serif;
@@ -48,19 +51,19 @@ header {
     display: flex;
 
     /* Alterado: fundo alterado de cor sólida para gradiente listrado Y2K */
-    background: repeating-linear-gradient(
-        45deg,
-        #da6a0e,
-        #da6a0e 15px,
-        #ea7818 15px,
-        #ea7818 30px
-    );
+    background: repeating-linear-gradient(45deg,
+            #da6a0e,
+            #da6a0e 15px,
+            #ea7818 15px,
+            #ea7818 30px);
 
     color: white;
     flex-direction: column;
     overflow: visible;
-    border-radius: 15px 15px 0 0; /* Novo: cantos superiores arredondados */
-    padding-top: 10px; /* Novo: espaço interno superior */
+    border-radius: 15px 15px 0 0;
+    /* Novo: cantos superiores arredondados */
+    padding-top: 10px;
+    /* Novo: espaço interno superior */
 }
 
 
@@ -75,7 +78,8 @@ header {
     align-items: center;
     width: 100%;
     overflow: visible;
-    position: relative; /* Novo: referência para os elementos internos */
+    position: relative;
+    /* Novo: referência para os elementos internos */
 }
 
 
@@ -99,78 +103,143 @@ header {
 
 /* Novo: Bloco de estilos da área central */
 
-#header-centro { /* Novo */
-    display: flex; /* Novo */
-    flex-direction: column; /* Novo */
-    align-items: center; /* Novo */
-    gap: 12px; /* Novo */
-    z-index: 5; /* Novo */
-    margin-top: -20px; /* Novo */
-} /* Novo */
+#header-centro {
+    /* Novo */
+    display: flex;
+    /* Novo */
+    flex-direction: column;
+    /* Novo */
+    align-items: center;
+    /* Novo */
+    gap: 12px;
+    /* Novo */
+    z-index: 5;
+    /* Novo */
+    margin-top: -20px;
+    /* Novo */
+}
+
+/* Novo */
 
 
-.header-topo-info { /* Novo */
-    display: flex; /* Novo */
-    align-items: center; /* Novo */
-    gap: 15px; /* Novo */
-} /* Novo */
+.header-topo-info {
+    /* Novo */
+    display: flex;
+    /* Novo */
+    align-items: center;
+    /* Novo */
+    gap: 15px;
+    /* Novo */
+}
+
+/* Novo */
 
 
-.status-bar { /* Novo */
-    color: #ffff00; /* Novo */
-    font-size: 35px; /* Novo */
-    font-weight: bold; /* Novo */
-    text-shadow: 2px 2px 0px #000; /* Novo */
-    letter-spacing: 1px; /* Novo */
-} /* Novo */
+.status-bar {
+    /* Novo */
+    color: #ffff00;
+    /* Novo */
+    font-size: 35px;
+    /* Novo */
+    font-weight: bold;
+    /* Novo */
+    text-shadow: 2px 2px 0px #000;
+    /* Novo */
+    letter-spacing: 1px;
+    /* Novo */
+}
+
+/* Novo */
 
 
-.btn-login { /* Novo */
-    background: linear-gradient(#ffffff, #cccccc); /* Novo */
-    color: #000; /* Novo */
-    padding: 4px 12px; /* Novo */
-    border-radius: 20px; /* Novo */
-    font-size: 12px; /* Novo */
-    font-weight: bold; /* Novo */
-    text-decoration: none; /* Novo */
-    border: 2px solid #000; /* Novo */
-    box-shadow: 2px 2px 0px #000; /* Novo */
-    transition: transform 0.2s; /* Novo */
-} /* Novo */
+.btn-login {
+    /* Novo */
+    background: linear-gradient(#ffffff, #cccccc);
+    /* Novo */
+    color: #000;
+    /* Novo */
+    padding: 4px 12px;
+    /* Novo */
+    border-radius: 20px;
+    /* Novo */
+    font-size: 12px;
+    /* Novo */
+    font-weight: bold;
+    /* Novo */
+    text-decoration: none;
+    /* Novo */
+    border: 2px solid #000;
+    /* Novo */
+    box-shadow: 2px 2px 0px #000;
+    /* Novo */
+    transition: transform 0.2s;
+    /* Novo */
+}
+
+/* Novo */
 
 
-.btn-login:hover { /* Novo */
-    transform: scale(1.1); /* Novo */
-    background: #ffff00; /* Novo */
-} /* Novo */
+.btn-login:hover {
+    /* Novo */
+    transform: scale(1.1);
+    /* Novo */
+    background: #ffff00;
+    /* Novo */
+}
+
+/* Novo */
 
 
-.search-box input { /* Novo */
-    padding: 6px 12px; /* Novo */
-    border: 2px solid #000; /* Novo */
-    border-radius: 15px; /* Novo */
-    outline: none; /* Novo */
-    font-size: 14px; /* Novo */
-    width: 200px; /* Novo */
-} /* Novo */
+.search-box input {
+    /* Novo */
+    padding: 6px 12px;
+    /* Novo */
+    border: 2px solid #000;
+    /* Novo */
+    border-radius: 15px;
+    /* Novo */
+    outline: none;
+    /* Novo */
+    font-size: 14px;
+    /* Novo */
+    width: 200px;
+    /* Novo */
+}
+
+/* Novo */
 
 
-.search-box button { /* Novo */
-    background-color: #ff007f; /* Novo */
-    color: white; /* Novo */
-    border: 2px solid #000; /* Novo */
-    border-radius: 15px; /* Novo */
-    padding: 6px 14px; /* Novo */
-    font-weight: bold; /* Novo */
-    cursor: pointer; /* Novo */
-    box-shadow: 2px 2px 0px #000; /* Novo */
-    transition: background-color 0.2s, transform 0.1s; /* Novo */
-} /* Novo */
+.search-box button {
+    /* Novo */
+    background-color: #ff007f;
+    /* Novo */
+    color: white;
+    /* Novo */
+    border: 2px solid #000;
+    /* Novo */
+    border-radius: 15px;
+    /* Novo */
+    padding: 6px 14px;
+    /* Novo */
+    font-weight: bold;
+    /* Novo */
+    cursor: pointer;
+    /* Novo */
+    box-shadow: 2px 2px 0px #000;
+    /* Novo */
+    transition: background-color 0.2s, transform 0.1s;
+    /* Novo */
+}
+
+/* Novo */
 
 
-.search-box button:hover { /* Novo */
-    background-color: #024301; /* Novo */
-    transform: scale(1.05); /* Novo */
+.search-box button:hover {
+    /* Novo */
+    background-color: #024301;
+    /* Novo */
+    transform: scale(1.05);
+    /* Novo */
 }
 
 
@@ -214,21 +283,37 @@ header {
 
 /* Novo: Estilo do selo badge "AO VIVO!" */
 
-.badge-tag { /* Novo */
-    position: absolute; /* Novo */
-    top: -20px; /* Novo */
-    left: -20px; /* Novo */
-    background-color: #ff0055; /* Novo */
-    color: #fff; /* Novo */
-    font-size: 12px; /* Novo */
-    font-weight: bold; /* Novo */
-    padding: 6px 10px; /* Novo */
-    border-radius: 10px; /* Novo */
-    border: 2px solid #fff; /* Novo */
-    transform: rotate(-12deg); /* Novo */
-    z-index: 15; /* Novo */
-    box-shadow: 3px 3px 0px #000; /* Novo */
-} /* Novo */
+.badge-tag {
+    /* Novo */
+    position: absolute;
+    /* Novo */
+    top: -20px;
+    /* Novo */
+    left: -20px;
+    /* Novo */
+    background-color: #ff0055;
+    /* Novo */
+    color: #fff;
+    /* Novo */
+    font-size: 12px;
+    /* Novo */
+    font-weight: bold;
+    /* Novo */
+    padding: 6px 10px;
+    /* Novo */
+    border-radius: 10px;
+    /* Novo */
+    border: 2px solid #fff;
+    /* Novo */
+    transform: rotate(-12deg);
+    /* Novo */
+    z-index: 15;
+    /* Novo */
+    box-shadow: 3px 3px 0px #000;
+    /* Novo */
+}
+
+/* Novo */
 
 
 /* =========================================================
@@ -239,22 +324,26 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #430198;
-    padding: 12px 0; /* Alterado: ajustado de 10px para 12px */
+    padding: 12px 0;
+    /* Alterado: ajustado de 10px para 12px */
     border-radius: 10px;
-    margin-top: 10px; /* Alterado: ajustado de 20px para 10px */
+    margin-top: 10px;
+    /* Alterado: ajustado de 20px para 10px */
 }
 
 
 ul {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Alterado: alterado de space-between para center */
+    justify-content: center;
+    /* Alterado: alterado de space-between para center */
     gap: 20px;
 }
 
 
 li {
-    font-size: 24px; /* Alterado: tamanho alterado de 30px para 24px e display inline removido */
+    font-size: 24px;
+    /* Alterado: tamanho alterado de 30px para 24px e display inline removido */
 }
 
 
@@ -264,11 +353,16 @@ a {
     background-color: #da6a0e;
     padding: 10px 24px;
     border-radius: 8px;
-    display: flex; /* Alterado: alterado de inline-block para flex */
-    align-items: center; /* Novo: alinhamento dos ícones com texto */
-    gap: 8px; /* Novo: distância entre o ícone e a palavra */
-    border: 2px solid #000; /* Novo: borda preta cartoon */
-    box-shadow: 3px 3px 0px #000; /* Novo: sombra sólida Y2K */
+    display: flex;
+    /* Alterado: alterado de inline-block para flex */
+    align-items: center;
+    /* Novo: alinhamento dos ícones com texto */
+    gap: 8px;
+    /* Novo: distância entre o ícone e a palavra */
+    border: 2px solid #000;
+    /* Novo: borda preta cartoon */
+    box-shadow: 3px 3px 0px #000;
+    /* Novo: sombra sólida Y2K */
     transition: background-color 0.2s, transform 0.2s;
 }
 
@@ -284,12 +378,18 @@ a:hover {
    ========================================================= */
 
 .content {
-    background-color: #024301;
+    background-image: repeating-linear-gradient(-65deg,
+            #024301,
+            #024301 15px,
+            #025a01 15px,
+            #025a01 30px);
     padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px; /* Novo: espaço entre os elementos */
+    gap: 30px;
+    /* Novo: espaço entre os elementos */
+
 }
 
 
@@ -299,12 +399,17 @@ a:hover {
 
 .iRafa-trailer {
     display: flex;
-    flex-direction: column;     /* Alinha os itens em coluna */
-    justify-content: center;    /* Centraliza o vídeo na vertical dentro da div */
-    align-items: center;        /* Centraliza o vídeo na horizontal dentro da div */
-    height: 524px;              /* Altura da div (pode aumentar quanto quiser) */
+    flex-direction: column;
+    /* Alinha os itens em coluna */
+    justify-content: center;
+    /* Centraliza o vídeo na vertical dentro da div */
+    align-items: center;
+    /* Centraliza o vídeo na horizontal dentro da div */
+    height: 524px;
+    /* Altura da div (pode aumentar quanto quiser) */
     width: 100%;
-    max-width: 500px;           /* Largura total da div container */
+    max-width: 500px;
+    /* Largura total da div container */
     margin: 30px auto 0 auto;
     background-color: #430198;
     padding: 15px;
@@ -313,13 +418,15 @@ a:hover {
     box-shadow: 5px 5px 0px #000;
     text-align: center;
 }
-#logo-baixo{
+
+#logo-baixo {
     width: 150px;
     height: auto;
-    top:13%;
+    top: 13%;
     position: relative;
 }
-.trailer-title{
+
+.trailer-title {
     top: -20px;
     color: #ffffff;
     font-size: 50px;
@@ -327,15 +434,20 @@ a:hover {
     text-shadow: 2px 2px 0px #000;
     letter-spacing: 1px;
 }
-.trailer-description{
-    color: #ffffff ;
+
+.trailer-description {
+    color: #ffffff;
     font-family: 'Coolvetica Rg Cond', sans-serif;
     font-size: 25px;
 }
+
 .video {
-    width: 460px;              /* Largura fixa do vídeo */
-    height: 260px;             /* Altura fixa do vídeo */
-    max-width: 100%;           /* Garante que não ultrapasse a div */
+    width: 460px;
+    /* Largura fixa do vídeo */
+    height: 260px;
+    /* Altura fixa do vídeo */
+    max-width: 100%;
+    /* Garante que não ultrapasse a div */
     border-radius: 15px;
     object-fit: cover;
 }
@@ -349,7 +461,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 650px;           /* Aumentado a largura para caber os dois lados lado a lado */
+    max-width: 650px;
+    /* Aumentado a largura para caber os dois lados lado a lado */
     margin: 30px auto 0 auto;
     background-color: #430198;
     padding: 15px;
@@ -370,10 +483,12 @@ a:hover {
 /* Container flex para alinhar lado a lado */
 .music-corpo {
     display: flex;
-    flex-direction: row;       /* Coloca a playlist e o texto lado a lado */
+    flex-direction: row;
+    /* Coloca a playlist e o texto lado a lado */
     align-items: center;
     justify-content: space-between;
-    gap: 15px;                 /* Espaço entre a playlist e a lista */
+    gap: 15px;
+    /* Espaço entre a playlist e a lista */
     width: 100%;
 }
 
@@ -383,19 +498,22 @@ a:hover {
 
 /* Lado Esquerdo: Playlist */
 .playlist-container {
-    flex: 1;                   /* Ocupa 50% do espaço */
+    flex: 1;
+    /* Ocupa 50% do espaço */
     width: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff007f, #430198); 
-    border: 3px solid #ffff00; /* Borda Amarela Neon */
+    background: linear-gradient(135deg, #ff007f, #430198);
+    border: 3px solid #ffff00;
+    /* Borda Amarela Neon */
     border-radius: 18px;
     box-shadow: 4px 4px 0px #000, 0 0 15px rgba(255, 0, 127, 0.6);
 }
 
 /* Lado Direito: Caixa com as músicas */
 .music-lista {
-    flex: 1;                   /* Ocupa 50% do espaço */
+    flex: 1;
+    /* Ocupa 50% do espaço */
     background-color: #38005b;
     border: 2px solid #da6a0e;
     border-radius: 12px;
@@ -419,5 +537,6 @@ a:hover {
 }
 
 .music-lista b {
-    color: #ff007f;            /* Destaque em rosa para os nomes */
+    color: #ff007f;
+    /* Destaque em rosa para os nomes */
 }
