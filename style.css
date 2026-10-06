@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'TriacSeventyOne';
-    /* Substitua a extensão abaixo (.ttf, .otf, etc.) pela extensão real do seu arquivo */
-    src: url('./Triac\ 71.otf') format('truetype'); 
+    src: url('./Triac 71.otf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
+
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box; /* Novo: evita estouro de largura com bordas/padding */
 }
 
 body {
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 50px; /* Aumentado para dar espaço pro vazamento na parte superior */
+    padding-top: 60px; /* Alterado: aumentado de 50px para 60px para dar espaço ao vazamento */
     padding-bottom: 20px;
     background-color: #38005b;
     font-family: 'TriacSeventyOne', sans-serif;
@@ -22,73 +22,186 @@ body {
 
 header {
     display: flex;
-    background-color: rgb(218, 106, 14);
+    /* Alterado: fundo alterado de cor sólida para gradiente listrado Y2K */
+    background: repeating-linear-gradient(
+        45deg,
+        #da6a0e,
+        #da6a0e 15px,
+        #ea7818 15px,
+        #ea7818 30px
+    );
     color: white;
     flex-direction: column;
-    overflow: visible; /* Garante que os elementos vazados não sejam cortados */
+    overflow: visible;
+    border-radius: 15px 15px 0 0; /* Novo: cantos superiores arredondados */
+    padding-top: 10px; /* Novo: espaço interno superior */
 }
 
 #imagens-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Distribui a logo na esquerda e a imagem na direita */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     overflow: visible;
+    position: relative; /* Novo: referência para os elementos internos */
 }
 
 #logo {
     height: 165.6px;
     width: 480px;
     position: relative;
-    top: -25px;  /* Vaza para cima */
-    left: -30px; /* Vaza para a esquerda */
-    z-index: 10;  /* Garante que fique acima de outros elementos */
+    top: -55px;
+    left: -40px;
+    z-index: 10;
 }
+
+/* Novo: Bloco de estilos da área central */
+#header-centro { /* Novo */
+    display: flex; /* Novo */
+    flex-direction: column; /* Novo */
+    align-items: center; /* Novo */
+    gap: 12px; /* Novo */
+    z-index: 5; /* Novo */
+    margin-top: -20px; /* Novo */
+} /* Novo */
+
+.header-topo-info { /* Novo */
+    display: flex; /* Novo */
+    align-items: center; /* Novo */
+    gap: 15px; /* Novo */
+} /* Novo */
+
+.status-bar { /* Novo */
+    color: #ffff00; /* Novo */
+    font-size: 35px; /* Novo */
+    font-weight: bold; /* Novo */
+    text-shadow: 2px 2px 0px #000; /* Novo */
+    letter-spacing: 1px; /* Novo */
+} /* Novo */
+
+.btn-login { /* Novo */
+    background: linear-gradient(#ffffff, #cccccc); /* Novo */
+    color: #000; /* Novo */
+    padding: 4px 12px; /* Novo */
+    border-radius: 20px; /* Novo */
+    font-size: 12px; /* Novo */
+    font-weight: bold; /* Novo */
+    text-decoration: none; /* Novo */
+    border: 2px solid #000; /* Novo */
+    box-shadow: 2px 2px 0px #000; /* Novo */
+    transition: transform 0.2s; /* Novo */
+} /* Novo */
+
+.btn-login:hover { /* Novo */
+    transform: scale(1.1); /* Novo */
+    background: #ffff00; /* Novo */
+} /* Novo */
+
+
+
+.search-box input { /* Novo */
+    padding: 6px 12px; /* Novo */
+    border: 2px solid #000; /* Novo */
+    border-radius: 15px; /* Novo */
+    outline: none; /* Novo */
+    font-size: 14px; /* Novo */
+    width: 200px; /* Novo */
+} /* Novo */
+
+.search-box button { /* Novo */
+    background-color: #ff007f; /* Novo */
+    color: white; /* Novo */
+    border: 2px solid #000; /* Novo */
+    border-radius: 15px; /* Novo */
+    padding: 6px 14px; /* Novo */
+    font-weight: bold; /* Novo */
+    cursor: pointer; /* Novo */
+    box-shadow: 2px 2px 0px #000; /* Novo */
+    transition: background-color 0.2s, transform 0.1s; /* Novo */
+} /* Novo */
+
+.search-box button:hover { /* Novo */
+    background-color: #024301; /* Novo */
+    transform: scale(1.05); /* Novo */
+} /* Novo */
 
 #header-div-img {
     width: 280px;
     height: 160px;
     background-color: #430198;
-    border: 30px solid #024301;
+    border: 15px solid #024301;
     border-radius: 30px;
     position: relative;
     overflow: visible;
-    top: -30px;          /* Vaza para cima */
-    right: -20px;        /* Vaza para a direita */
-    margin: 0;           /* Removido o '0 auto' para permitir o alinhamento correto */
+    top: -30px;
+    right: -20px;
+    margin: 0;
     z-index: 10;
 }
 
 #header-image {
-    width: 280px;
+    border-radius: 25px;
+    width: 251px;
     height: auto;
     position: absolute;
-    top: 2%;
+    top: -5%;
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* Novo: Estilo do selo badge "AO VIVO!" */
+.badge-tag { /* Novo */
+    position: absolute; /* Novo */
+    top: -20px; /* Novo */
+    left: -20px; /* Novo */
+    background-color: #ff0055; /* Novo */
+    color: #fff; /* Novo */
+    font-size: 12px; /* Novo */
+    font-weight: bold; /* Novo */
+    padding: 6px 10px; /* Novo */
+    border-radius: 10px; /* Novo */
+    border: 2px solid #fff; /* Novo */
+    transform: rotate(-12deg); /* Novo */
+    z-index: 15; /* Novo */
+    box-shadow: 3px 3px 0px #000; /* Novo */
+} /* Novo */
+
 nav {
     display: flex;
     justify-content: center;
     background-color: #430198;
-    padding: 10px 0;
+    padding: 12px 0; /* Alterado: ajustado de 10px para 12px */
     border-radius: 10px;
-    margin-top: 20px;
-
+    margin-top: 10px; /* Alterado: ajustado de 20px para 10px */
 }
+
 ul {
     list-style-type: none;
     display: flex;
-    
-    justify-content: space-between;
+    justify-content: center; /* Alterado: alterado de space-between para center */
     gap: 20px;
-    
 }
+
 li {
-    display: inline;
-    font-size: 30px;
+    font-size: 24px; /* Alterado: tamanho alterado de 30px para 24px e display inline removido */
 }
-a{
+
+a {
     color: white;
+    text-decoration: none;
+    background-color: #da6a0e;
+    padding: 10px 24px;
+    border-radius: 8px;
+    display: flex; /* Alterado: alterado de inline-block para flex */
+    align-items: center; /* Novo: alinhamento dos ícones com texto */
+    gap: 8px; /* Novo: distância entre o ícone e a palavra */
+    border: 2px solid #000; /* Novo: borda preta cartoon */
+    box-shadow: 3px 3px 0px #000; /* Novo: sombra sólida Y2K */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+a:hover {
+    background-color: #024301;
+    transform: scale(1.05);
 }

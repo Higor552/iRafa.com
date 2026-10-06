@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR"> <!-- Alterado: idioma alterado para pt-BR -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><div id="imagens-header">
-        <div ><img id="logo" src="./image/iRafa-logo.png" alt="iRafa Logo"></div>
-        <div id="header-div-img"><img id="header-image" src="./image/trio-velho-testamento.png" alt="grupo png"></div>
+    <header>
+        <div id="imagens-header">
+            <div id="logo-container"> <!-- Alterado: adição de div envoltória da logo -->
+                <img id="logo" src="./image/iRafa-logo.png" alt="iRafa Logo">
+            </div> <!-- Alterado -->
+
+            <!-- Novo: Seção central com status, botão de login e busca -->
+            <div id="header-centro"> <!-- Novo -->
+                <div class="header-topo-info"> <!-- Novo -->
+                    <span class="status-bar">★ STATUS: GRAVANDO O PRÓXIMO POST! ★</span> <!-- Novo -->
+                    
+                </div> <!-- Novo -->
+
+                
+            </div> <!-- Novo -->
+
+            <div id="header-div-img">
+                <div class="badge-tag">★ ★ ★ </div> <!-- Novo: Selo badge estilo iCarly -->
+                <img id="header-image" src="./image/trio-velho-testamento.png" alt="grupo png">
+            </div>
         </div>
+ 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><span>📺</span> HOME</a></li> <!-- Alterado: adição de ícone e texto em caixa alta -->
+                <li><a href="about.html"><span>👥</span> ABOUT</a></li> <!-- Alterado: adição de ícone e texto em caixa alta -->
+                <li><a href="contact.html"><span>✉️</span> CONTACT</a></li> <!-- Alterado: adição de ícone e texto em caixa alta -->
             </ul>
+        </nav>
     </header>   
+
     <script src="script.js"></script>
 </body>
 </html>
