@@ -152,95 +152,6 @@ header {
 /* Novo */
 
 
-.btn-login {
-    /* Novo */
-    background: linear-gradient(#ffffff, #cccccc);
-    /* Novo */
-    color: #000;
-    /* Novo */
-    padding: 4px 12px;
-    /* Novo */
-    border-radius: 20px;
-    /* Novo */
-    font-size: 12px;
-    /* Novo */
-    font-weight: bold;
-    /* Novo */
-    text-decoration: none;
-    /* Novo */
-    border: 2px solid #000;
-    /* Novo */
-    box-shadow: 2px 2px 0px #000;
-    /* Novo */
-    transition: transform 0.2s;
-    /* Novo */
-}
-
-/* Novo */
-
-
-.btn-login:hover {
-    /* Novo */
-    transform: scale(1.1);
-    /* Novo */
-    background: #ffff00;
-    /* Novo */
-}
-
-/* Novo */
-
-
-.search-box input {
-    /* Novo */
-    padding: 6px 12px;
-    /* Novo */
-    border: 2px solid #000;
-    /* Novo */
-    border-radius: 15px;
-    /* Novo */
-    outline: none;
-    /* Novo */
-    font-size: 14px;
-    /* Novo */
-    width: 200px;
-    /* Novo */
-}
-
-/* Novo */
-
-
-.search-box button {
-    /* Novo */
-    background-color: #ff007f;
-    /* Novo */
-    color: white;
-    /* Novo */
-    border: 2px solid #000;
-    /* Novo */
-    border-radius: 15px;
-    /* Novo */
-    padding: 6px 14px;
-    /* Novo */
-    font-weight: bold;
-    /* Novo */
-    cursor: pointer;
-    /* Novo */
-    box-shadow: 2px 2px 0px #000;
-    /* Novo */
-    transition: background-color 0.2s, transform 0.1s;
-    /* Novo */
-}
-
-/* Novo */
-
-
-.search-box button:hover {
-    /* Novo */
-    background-color: #024301;
-    /* Novo */
-    transform: scale(1.05);
-    /* Novo */
-}
 
 
 /* =========================================================
@@ -321,6 +232,7 @@ header {
    ========================================================= */
 
 nav {
+    font-family: coolvetica rg cond, sans-serif;
     display: flex;
     justify-content: center;
     background-color: #430198;
@@ -365,7 +277,21 @@ a {
     /* Novo: sombra sólida Y2K */
     transition: background-color 0.2s, transform 0.2s;
 }
-
+details {
+    background-color: #da6a0e;
+    padding: 10px 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0px #000;
+    transition: background-color 0.2s, transform 0.2s;
+}
+details :hover {
+    background-color: #024301;
+    transform: scale(1.05);
+}
 
 a:hover {
     background-color: #024301;
