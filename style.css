@@ -466,3 +466,159 @@ a:hover {
     color: #ff007f;
     /* Destaque em rosa para os nomes */
 }
+@media (max-width: 768px) {
+    body {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    /* --- HEADER --- */
+    header {
+        padding: 15px 10px 10px 10px;
+    }
+
+    #imagens-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 290px;
+        height: auto;
+    }
+
+    #header-centro {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .status-bar {
+        font-size: 20px;
+    }
+
+    #header-div-img {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 5px auto 0 auto;
+        width: 220px;
+        height: 130px;
+        border: 10px solid #00ff66;
+        border-radius: 20px;
+    }
+
+    #header-image {
+        width: 195px;
+        top: -5%;
+    }
+
+    .badge-tag {
+        top: -12px;
+        left: -12px;
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    /* --- NAVEGAÇÃO / MENU --- */
+    nav {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    a, details {
+        padding: 8px 14px;
+        font-size: 16px;
+    }
+
+    /* --- CONTEÚDO PRINCIPAL --- */
+    .content {
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 25px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    /* --- SEÇÃO DO TRAILER --- */
+    .iRafa-trailer {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 12px;
+        border: 12px solid #ffff00; /* Borda cartoon proporcional ao mobile */
+        border-radius: 18px;
+        box-shadow: 4px 4px 0px #ff007f;
+    }
+
+    .trailer-title {
+        font-size: 26px;
+        top: 0;
+        margin-bottom: 8px;
+    }
+
+    .trailer-description {
+        font-size: 18px;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+    }
+
+    #logo-baixo {
+        top: 0;
+        margin-top: 10px;
+        width: 110px;
+    }
+
+    /* --- SEÇÃO DAS MÚSICAS --- */
+    .music-part {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 12px;
+    }
+
+    .music-titulo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .music-corpo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .playlist-container,
+    .music-lista {
+        width: 100%;
+        flex: none;
+    }
+
+    .music-lista {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
