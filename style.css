@@ -8,7 +8,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Coolvetica Rg Cond';
+    src: url(./Coolvetica\ Rg\ Cond.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* =========================================================
    2. RESET GERAL
@@ -304,12 +309,29 @@ a:hover {
     background-color: #430198;
     padding: 15px;
     border-radius: 20px;
-    border: 3px solid #ffff00;
+    border: 30px solid #ffff00;
     box-shadow: 5px 5px 0px #000;
     text-align: center;
 }
-
-
+#logo-baixo{
+    width: 150px;
+    height: auto;
+    top:13%;
+    position: relative;
+}
+.trailer-title{
+    top: -20px;
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #000;
+    letter-spacing: 1px;
+}
+.trailer-description{
+    color: #ffffff ;
+    font-family: 'Coolvetica Rg Cond', sans-serif;
+    font-size: 25px;
+}
 .video {
     width: 460px;              /* Largura fixa do vídeo */
     height: 260px;             /* Altura fixa do vídeo */
@@ -318,16 +340,16 @@ a:hover {
     object-fit: cover;
 }
 
-
 /* =========================================================
    14. ÁREA DE MÚSICAS
    ========================================================= */
 
 .music-part {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;           /* Aumentado a largura para caber os dois lados lado a lado */
     margin: 30px auto 0 auto;
     background-color: #430198;
     padding: 15px;
@@ -337,29 +359,65 @@ a:hover {
     text-align: center;
 }
 
-
-/* =========================================================
-   15. PLAYLIST DO SPOTIFY
-   ========================================================= */
-
-/* Container da Playlist estilo iCarly */
-
-.playlist-container {
-    max-width: 500px;
-    margin: 30px auto 0 auto;
-    background-color: #430198;
-    padding: 15px;
-    border-radius: 20px;
-    border: 3px solid #ffff00;
-    box-shadow: 5px 5px 0px #000;
-    text-align: center;
-}
-
-
-.playlist-titulo {
+.music-titulo {
     color: #ffff00;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 12px;
     text-shadow: 2px 2px 0px #000;
     letter-spacing: 1px;
+}
+
+/* Container flex para alinhar lado a lado */
+.music-corpo {
+    display: flex;
+    flex-direction: row;       /* Coloca a playlist e o texto lado a lado */
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;                 /* Espaço entre a playlist e a lista */
+    width: 100%;
+}
+
+/* =========================================================
+   15. PLAYLIST (ESQUERDA) E LISTA (DIREITA)
+   ========================================================= */
+
+/* Lado Esquerdo: Playlist */
+.playlist-container {
+    flex: 1;                   /* Ocupa 50% do espaço */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff007f, #430198); 
+    border: 3px solid #ffff00; /* Borda Amarela Neon */
+    border-radius: 18px;
+    box-shadow: 4px 4px 0px #000, 0 0 15px rgba(255, 0, 127, 0.6);
+}
+
+/* Lado Direito: Caixa com as músicas */
+.music-lista {
+    flex: 1;                   /* Ocupa 50% do espaço */
+    background-color: #38005b;
+    border: 2px solid #da6a0e;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 3px 3px 0px #000;
+    color: #ffffff;
+    font-family: 'Coolvetica Rg Cond', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.music-subtitulo {
+    color: #ffff00;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+}
+
+.music-lista b {
+    color: #ff007f;            /* Destaque em rosa para os nomes */
 }
