@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'TriacSeventyOne';
+    /* Substitua a extensão abaixo (.ttf, .otf, etc.) pela extensão real do seu arquivo */
+    src: url('./Triac\ 71.otf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px; /* Aumentado para dar espaço pro vazamento na parte superior */
+    padding-bottom: 20px;
+    background-color: #38005b;
+    font-family: 'TriacSeventyOne', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: rgb(218, 106, 14);
+    color: white;
+    flex-direction: column;
+    overflow: visible; /* Garante que os elementos vazados não sejam cortados */
+}
+
+#imagens-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribui a logo na esquerda e a imagem na direita */
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+}
+
+#logo {
+    height: 165.6px;
+    width: 480px;
+    position: relative;
+    top: -25px;  /* Vaza para cima */
+    left: -30px; /* Vaza para a esquerda */
+    z-index: 10;  /* Garante que fique acima de outros elementos */
+}
+
+#header-div-img {
+    width: 280px;
+    height: 160px;
+    background-color: #430198;
+    border: 30px solid #024301;
+    border-radius: 30px;
+    position: relative;
+    overflow: visible;
+    top: -30px;          /* Vaza para cima */
+    right: -20px;        /* Vaza para a direita */
+    margin: 0;           /* Removido o '0 auto' para permitir o alinhamento correto */
+    z-index: 10;
+}
+
+#header-image {
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #430198;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+li {
+    display: inline;
+    font-size: 30px;
+}
+a{
+    color: white;
+}
