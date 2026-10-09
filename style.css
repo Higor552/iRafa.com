@@ -622,3 +622,9 @@ a:hover {
         padding: 10px;
     }
 }
+
+.img-gallery{
+    height: 50%;
+    width: 50% ;
+
+}
